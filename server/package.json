@@ -1,0 +1,33 @@
+{
+  "name": "agricultural-trace-server",
+  "version": "1.0.0",
+  "description": "农产品溯源系统后端API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "init-db": "mysql -u root -p123456 < database/init.sql"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.14.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "keywords": [
+    "农产品",
+    "溯源",
+    "区块链",
+    "API"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "type": "commonjs"
+}

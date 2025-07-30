@@ -1,0 +1,57 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "baseUrl": "./",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "preserve",
+    "declaration": false,
+    "declarationMap": false,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "noEmit": true,
+    "importHelpers": true,
+    "downlevelIteration": true,
+    "isolatedModules": true,
+    "strict": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "useDefineForClassFields": false,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ],
+    "types": [
+      "vite/client"
+    ]
+  },
+  "include": [
+    "src/**/*.js",
+    "src/**/*.vue",
+    "src/**/*.ts",
+    "*.js",
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.d.ts"
+  ]
+}
+
