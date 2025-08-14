@@ -1,18 +1,29 @@
 <template>
   <div v-if="show" class="fixed inset-0 z-50 overflow-y-auto">
-    <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
-      <div class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75" @click="cancel"></div>
-      
-      <div class="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl">
+    <div
+      class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+    >
+      <div
+        class="fixed inset-0 transition-opacity bg-gray-500 bg-opacity-75"
+        @click="cancel"
+      ></div>
+
+      <div
+        class="inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl"
+      >
         <div class="flex items-center mb-4">
-          <ExclamationTriangleIcon class="h-6 w-6 text-yellow-600 mr-3" />
-          <h3 class="text-lg font-medium text-gray-900">{{ title }}</h3>
+          <ExclamationTriangleIcon
+            class="h-6 w-6 text-yellow-600 mr-3"
+          />
+          <h3 class="text-lg font-medium text-gray-900">
+            {{ title }}
+          </h3>
         </div>
-        
+
         <div class="mb-6">
           <p class="text-sm text-gray-500">{{ message }}</p>
         </div>
-        
+
         <div class="flex justify-end space-x-3">
           <button
             type="button"

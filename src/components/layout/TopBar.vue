@@ -2,7 +2,9 @@
   <header class="topbar-bg flex items-center justify-between px-6 h-16 border-b border-green-100/50 backdrop-blur-sm">
     <!-- 面包屑导航 -->
     <nav class="flex items-center gap-2">
-      <HomeIcon class="h-4 w-4 text-green-600" />
+      <RouterLink to="/trace/admin/home">
+        <HomeIcon class="h-4 w-4 text-green-600" />
+      </RouterLink>
       <ChevronRightIcon class="h-3 w-3 text-green-400" />
       <span class="text-sm text-green-700 font-medium">{{ currentPageName }}</span>
     </nav>
@@ -156,13 +158,17 @@ const showSettings = ref(false)
 const currentPageName = computed(() => {
   const routeNames = {
     '/trace/admin': '控制台',
-    '/trace/admin/category': '产品分类',
+    '/trace/admin/category': '分类管理',
     '/trace/admin/audit': '数据审核',
     '/trace/admin/statistics': '统计分析',
     '/trace/farmer/add': '数据录入',
     '/trace/farmer/manage': '数据管理',
     '/trace/query': '扫码查询',
-    '/trace/result': '溯源结果'
+    '/trace/result': '溯源结果',
+    '/trace/admin/category/add': '添加分类',
+    '/trace/admin/code/add':'生成码',
+    '/trace/admin/code':'码管理',
+    '/trace/admin/trace':'流程管理'
   }
   return routeNames[route.path] || '管理平台'
 })
